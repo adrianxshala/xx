@@ -63,7 +63,6 @@ export default function LandingPage() {
   ];
 
   const screenshots = [
-   
     "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?q=80&w=800&auto=format",
     "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format",
   ];
@@ -96,45 +95,52 @@ export default function LandingPage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section
-        className="relative h-screen flex items-center justify-center bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1920&auto=format')",
-        }}
+  className="relative h-screen flex items-center justify-center bg-cover bg-center"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1920&auto=format')",
+  }}
+>
+  <div className="absolute inset-0 bg-black/50" />
+  <div className="relative z-10 text-center text-white px-4">
+    <h1 className="text-5xl md:text-7xl font-bold mb-6">
+      Find Your Dream Home with Ease
+    </h1>
+    <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+      Your perfect home is just a tap away. Download our app and start
+      your journey today.
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a
+        href="https://apps.apple.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform hover:scale-105"
       >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Find Your Dream Home with Ease
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Your perfect home is just a tap away. Download our app and start your
-            journey today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer">
-  <img
-    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-    alt="Download on the App Store"
-    className="h-12"
-  />
-</a>
-<a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-    alt="Get it on Google Play"
-    className="h-12"
-  />
-</a>
-
-          </div>
-        </div>
-      </section>
-
-     
+        <img
+          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+          alt="Download on the App Store"
+          className="h-[50px]"
+        />
+      </a>
+      <a
+        href="https://play.google.com/store"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform hover:scale-105"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Get it on Google Play"
+          className="h-[45px]"
+        />
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* Features Section */}
-      
+
       {/* How It Works Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
@@ -146,7 +152,8 @@ export default function LandingPage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Search Properties</h3>
               <p className="text-muted-foreground">
-                Use our advanced filters to find properties that match your criteria
+                Use our advanced filters to find properties that match your
+                criteria
               </p>
             </div>
             <div className="text-center">
@@ -238,20 +245,28 @@ export default function LandingPage() {
             property.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer">
-  <img
-    src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-    alt="Download on the App Store"
-    className="h-12"
-  />
-</a>
-<a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-    alt="Get it on Google Play"
-    className="h-12"
-  />
-</a>
+            <a
+              href="https://apps.apple.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store"
+                className="h-12"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play"
+                className="h-12"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -285,15 +300,13 @@ export default function LandingPage() {
                     How do I download the app?
                   </AccordionTrigger>
                   <AccordionContent>
-                    Our app is available for download on both the Apple App Store
-                    and Google Play Store. Simply click on the respective download
-                    button and follow the installation instructions.
+                    Our app is available for download on both the Apple App
+                    Store and Google Play Store. Simply click on the respective
+                    download button and follow the installation instructions.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>
-                    Is the app free to use?
-                  </AccordionTrigger>
+                  <AccordionTrigger>Is the app free to use?</AccordionTrigger>
                   <AccordionContent>
                     Yes, the basic version of our app is completely free to use.
                     We also offer premium features for advanced users.
@@ -304,9 +317,9 @@ export default function LandingPage() {
                     How are properties verified?
                   </AccordionTrigger>
                   <AccordionContent>
-                    Our team thoroughly verifies each property listing by checking
-                    documentation and conducting virtual or physical inspections
-                    when necessary.
+                    Our team thoroughly verifies each property listing by
+                    checking documentation and conducting virtual or physical
+                    inspections when necessary.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -330,22 +343,34 @@ export default function LandingPage() {
               <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Features
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     How It Works
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Testimonials
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Contact
                   </a>
                 </li>
@@ -355,17 +380,26 @@ export default function LandingPage() {
               <h3 className="font-semibold text-lg mb-4">Legal</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Terms of Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary"
+                  >
                     Cookie Policy
                   </a>
                 </li>
